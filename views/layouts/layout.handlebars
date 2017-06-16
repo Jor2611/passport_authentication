@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/CSS/bootstrap.css">
+	<link rel="stylesheet" href="/CSS/style.css">
+	<link rel="stylesheet" href="/CSS/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="icon" href="/img/icon.png">
+	<title>Authentication</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="SignUp">
+	<meta name="description" content="passport.js authentication">
+	<meta name="author" content="Jora Khachatryan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	{{#if success_msg}}
+		<div class="alert alert-success">{{success_msg}}</div>
+		{{/if}}
+
+	{{#if error_msg}}
+		<div class="alert alert-danger">{{error_msg}}</div>
+		{{/if}}
+
+	{{#if error}}
+		<div class="alert alert-danger">{{error}}</div>
+		{{/if}}		
+	{{{body}}}
+	
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+         <section id="intro">
+             <div>
+                <h1>ARE YOU READY ?</h1>
+                <h2>GET STARTED</h2>
+            </div>
+        </section> 
+     
+    <main>
+    <h1>SIGN UP</h1>
+    <form action='/users/signup' method="POST">
+        <section>
+            <label for="FN">Full Name</label>
+            <label for="date">Birth Date</label>
+            <label>Gender</label>
+            <label for="UN">UserName</label>
+            <label for="Pass">Password</label>
+            <label for="Confirm">Confirm Password</label>
+        </section>
+        <section>
+        
+            <input type="text" name="fn" id="FN" placeholder="FirstName LastName..." required="" minlength=10>
+        
+            <input type="date" name="_date"  id="date" required="" >
+            <div>
+                <label>Male<input type="radio" name="Gender" value="Male" required="" ></label>
+                <label>Female<input type="radio" name="Gender" value="Female" required=""></label>
+            </div>
+            <input type="text" name="un" id="UN" placeholder="Type UserName..." required="" minlength=6>
+            <input type="password" name="Pass" id="Pass" placeholder="Password" required="" minlength=6>
+            <input type="password" name="Confirm" id="Confirm" placeholder="Confirm Password" required="" minlength=6>
+        </section>
+        <input type="submit" name="OK" value="SignUp" class="button">
+        <input type="button" name="log" value="SignIn" class="button">
+    </form>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/functions.js"></script>

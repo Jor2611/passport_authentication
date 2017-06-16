@@ -1,0 +1,21 @@
+<main>
+    <h1>SIGN IN</h1>
+    <form action='/users/signIn' method="POST">
+        <section>
+            <label for="UN">UserName</label>
+            <label for="Pass">Password</label>
+        </section>
+        <section>
+            <input type="text" name="username" id="UN" placeholder="Type UserName..." required="" minlength="6">
+            <input type="password" name="password" id="Pass" placeholder="Password" required="" minlength="6">
+        </section>
+        <input type="submit" name="log" value="SignIn" class="button">
+    </form>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('main').hide();
+        $('main').show(3000);
+    });
+</script>
