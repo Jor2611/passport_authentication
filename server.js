@@ -10,7 +10,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const mongo = require('mongodb');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://Jor_passport:630132@ds127842.mlab.com:27842/heroku_jpjgfdgs');
+mongoose.connect('mongodb://Jor_passport:630132@ds129442.mlab.com:29442/heroku_cvpmf4db');
 
 
 const routes = require('./apiroutes/home');
